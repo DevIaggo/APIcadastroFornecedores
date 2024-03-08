@@ -41,8 +41,8 @@ function ValidacaoProdFornecidos(req, res, next) {
 
         }
 
-        if (corpo_da_requisicao.Alimentos.length >= 7) {
-            return res.status(400).send({ message: 'O campo Alimentos é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Alimentos.length >= 5) {
+            return res.status(400).send({ message: 'O campo Alimentos é limitado a 4 opções.' });
         }
     }
 
@@ -56,8 +56,8 @@ function ValidacaoProdFornecidos(req, res, next) {
 
         }
 
-        if (corpo_da_requisicao.Brindes.length >= 7) {
-            return res.status(400).send({ message: 'O campo Alimentos é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Brindes.length >= 13) {
+            return res.status(400).send({ message: 'O campo Alimentos é limitado a 12 opções.' });
         }
     }
 
@@ -67,8 +67,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.Combustiveis)) {
             return res.status(400).send({ message: 'No campo Combustiveis, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.Combustiveis.length >= 7) {
-            return res.status(400).send({ message: 'O campo Combustiveis é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Combustiveis.length >= 5) {
+            return res.status(400).send({ message: 'O campo Combustiveis é limitado a 4 opções.' });
         }
     }
 
@@ -77,8 +77,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.EPIeEquipamentoSeguranca)) {
             return res.status(400).send({ message: 'No campo EPIeEquipamentoSeguranca, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.EPIeEquipamentoSeguranca.length >= 7) {
-            return res.status(400).send({ message: 'O campo EPIeEquipamentoSeguranca é limitado a 6 opções.' });
+        if (corpo_da_requisicao.EPIeEquipamentoSeguranca.length >= 8) {
+            return res.status(400).send({ message: 'O campo EPIeEquipamentoSeguranca é limitado a 7 opções.' });
         }
     }
 
@@ -87,8 +87,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.estocagemAcondicionamento)) {
             return res.status(400).send({ message: 'No campo estocagemAcondicionamento, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.estocagemAcondicionamento.length >= 7) {
-            return res.status(400).send({ message: 'O campo estocagemAcondicionamento é limitado a 6 opções.' });
+        if (corpo_da_requisicao.estocagemAcondicionamento.length >= 6) {
+            return res.status(400).send({ message: 'O campo estocagemAcondicionamento é limitado a 5 opções.' });
         }
     }
 
@@ -97,8 +97,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.ETEeETA)) {
             return res.status(400).send({ message: 'No campo ETEeETA, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.ETEeETA.length >= 7) {
-            return res.status(400).send({ message: 'O campo ETEeETA é limitado a 6 opções.' });
+        if (corpo_da_requisicao.ETEeETA.length >= 14) {
+            return res.status(400).send({ message: 'O campo ETEeETA é limitado a 13 opções.' });
         }
     }
 
@@ -107,8 +107,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.MRO)) {
             return res.status(400).send({ message: 'No campo MRO, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.MRO.length >= 7) {
-            return res.status(400).send({ message: 'O campo MRO é limitado a 6 opções.' });
+        if (corpo_da_requisicao.MRO.length >= 4) {
+            return res.status(400).send({ message: 'O campo MRO é limitado a 3 opções.' });
         }
     }
 
@@ -117,8 +117,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.Lubrificante)) {
             return res.status(400).send({ message: 'No campo Lubrificante, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.Lubrificante.length >= 7) {
-            return res.status(400).send({ message: 'O campo Lubrificante é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Lubrificante.length >= 8) {
+            return res.status(400).send({ message: 'O campo Lubrificante é limitado a 7 opções.' });
         }
     }
 
@@ -127,8 +127,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.materiaPrima)) {
             return res.status(400).send({ message: 'No campo materiaPrima, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.materiaPrima.length >= 7) {
-            return res.status(400).send({ message: 'O campo materiaPrima é limitado a 6 opções.' });
+        if (corpo_da_requisicao.materiaPrima.length >= 26) {
+            return res.status(400).send({ message: 'O campo materiaPrima é limitado a 25 opções.' });
         }
     }
 
@@ -137,8 +137,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.materialdeEmbalagens)) {
             return res.status(400).send({ message: 'No campo materialdeEmbalagens, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.materialdeEmbalagens.length >= 7) {
-            return res.status(400).send({ message: 'O campo materialdeEmbalagens é limitado a 6 opções.' });
+        if (corpo_da_requisicao.materialdeEmbalagens.length >= 9) {
+            return res.status(400).send({ message: 'O campo materialdeEmbalagens é limitado a 8 opções.' });
         }
     }
 
@@ -147,8 +147,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.materialdeExpediente)) {
             return res.status(400).send({ message: 'No campo materialdeExpediente, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.materialdeExpediente.length >= 7) {
-            return res.status(400).send({ message: 'O campo materialdeExpediente é limitado a 6 opções.' });
+        if (corpo_da_requisicao.materialdeExpediente.length >= 15) {
+            return res.status(400).send({ message: 'O campo materialdeExpediente é limitado a 14 opções.' });
         }
     }
 
@@ -157,8 +157,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.materialHigieneELimpeza)) {
             return res.status(400).send({ message: 'No campo materialHigieneELimpeza, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.materialHigieneELimpeza.length >= 7) {
-            return res.status(400).send({ message: 'O campo materialHigieneELimpeza é limitado a 6 opções.' });
+        if (corpo_da_requisicao.materialHigieneELimpeza.length >= 16) {
+            return res.status(400).send({ message: 'O campo materialHigieneELimpeza é limitado a 15 opções.' });
         }
     }
 
@@ -167,8 +167,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.materialSecundario)) {
             return res.status(400).send({ message: 'No campo materialSecundario, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.materialSecundario.length >= 7) {
-            return res.status(400).send({ message: 'O campo materialSecundario é limitado a 6 opções.' });
+        if (corpo_da_requisicao.materialSecundario.length >= 10) {
+            return res.status(400).send({ message: 'O campo materialSecundario é limitado a 9 opções.' });
         }
     }
 
@@ -177,8 +177,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.Servicos)) {
             return res.status(400).send({ message: 'No campo Servicos, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.Servicos.length >= 7) {
-            return res.status(400).send({ message: 'O campo Servicos é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Servicos.length >= 11) {
+            return res.status(400).send({ message: 'O campo Servicos é limitado a 10 opções.' });
         }
     }
 
@@ -187,8 +187,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.telasSerigraficas)) {
             return res.status(400).send({ message: 'No campo telasSerigraficas, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.telasSerigraficas.length >= 7) {
-            return res.status(400).send({ message: 'O campo telasSerigraficas é limitado a 6 opções.' });
+        if (corpo_da_requisicao.telasSerigraficas.length >= 2) {
+            return res.status(400).send({ message: 'O campo telasSerigraficas é limitado a 1 opções.' });
         }
     }
 
@@ -197,8 +197,8 @@ function ValidacaoProdFornecidos(req, res, next) {
         if (!Array.isArray(corpo_da_requisicao.Uniformes)) {
             return res.status(400).send({ message: 'No campo Uniformes, é necessário o envio dos dados correto.' });
         }
-        if (corpo_da_requisicao.Uniformes.length >= 7) {
-            return res.status(400).send({ message: 'O campo Uniformes é limitado a 6 opções.' });
+        if (corpo_da_requisicao.Uniformes.length >= 8) {
+            return res.status(400).send({ message: 'O campo Uniformes é limitado a 7 opções.' });
         }
     }
     next()
