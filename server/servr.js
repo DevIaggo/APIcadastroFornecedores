@@ -1,7 +1,7 @@
 
 import dotenv from 'dotenv'
-import app from '../Modulos/rotas.js'
-dotenv.config({ path: './process.env' })
+import app from '../Modulos/rotas/rotas.js'
+dotenv.config({ path: './process.env'})
 
 
 app.listen(process.env.PORT, () => {
