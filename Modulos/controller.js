@@ -22,6 +22,7 @@ function ValidaPrecadastro(req, res, next) {
         contatotelefonico: req.body["contatotelefonico"],
         telefone: req.body["telefone"],
         Email: req.body["Email"],
+        homePage: req.body["homePage"],
         TipodeEmpresa: req.body["TipodeEmpresa"],
         TipodeSociedade: req.body["TipodeSociedade"],
         tipoderamodeAtividade: req.body["tipoderamodeAtividade"],
@@ -173,6 +174,13 @@ function ValidaPrecadastro(req, res, next) {
     if (isNullOrWhiteSpace(corpo_da_requisicao.Email)) {
         return res.status(404).send({ message: 'É necessário preencher o seu E-mail.' })
     }
+    //validação home pahe
+    if (corpo_da_requisicao.homePage !== undefined) {
+        if (isNullOrWhiteSpace(corpo_da_requisicao.homePage)) {
+            return res.status(404).send({ message: 'É necessário definir o seu tipo de empresa.' })
+        }
+    }
+
     //  validação tipo de empresa
     if (isNullOrWhiteSpace(corpo_da_requisicao.TipodeEmpresa)) {
         return res.status(404).send({ message: 'É necessário definir o seu tipo de empresa.' })

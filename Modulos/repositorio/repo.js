@@ -24,6 +24,7 @@ async function Inserirdados(body) {
             contatotelefonico,
             telefone,
             Email,
+            homePage,
             TipodeEmpresa,
             TipodeSociedade,
             tipoderamodeAtividade,
@@ -81,6 +82,7 @@ async function Inserirdados(body) {
                 @contatotelefonico,
                 @telefone,
                 @Email,
+                @homePage,
                 @TipodeEmpresa,
                 @TipodeSociedade,
                 @tipoderamodeAtividade,
@@ -142,6 +144,7 @@ async function Inserirdados(body) {
                 .input('contatotelefonico', body.contatotelefonico)
                 .input('telefone', body.telefone)
                 .input('Email', body.Email)
+                .input('homePage', body.homePage)
                 .input('TipodeEmpresa', body.TipodeEmpresa)
                 .input('TipodeSociedade', body.TipodeSociedade)
                 .input('tipoderamodeAtividade', body.tipoderamodeAtividade)
